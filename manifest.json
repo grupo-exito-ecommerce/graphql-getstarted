@@ -1,0 +1,17 @@
+{
+  "name": "graphql-getstarted",
+  "vendor": "exito",
+  "version": "1.0.0",
+  "title": "",
+  "description": "Getstarted for apps with graphql",
+  "scripts": {
+    "prereleasy": "bash lint"
+  },
+  "builders": {
+    "node": "3.x",
+    "graphql": "1.x"
+  },
+  "dependencies": {},
+  "mustUpdateAt": "2020-01-15",
+  "registries": ["smartcheckout"]
+}

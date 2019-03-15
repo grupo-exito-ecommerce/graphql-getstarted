@@ -1,0 +1,12 @@
+
+type Data   {
+  name: String
+  pwd: String
+}
+
+type Query {
+  """
+  Obtiene los parametros y muestra.
+  """
+  printUser(name: String, pwd: String): Data @cachecontrol(scope:private, maxAge:medium)
+}
