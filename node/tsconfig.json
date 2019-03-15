@@ -4,7 +4,6 @@
     "typeRoots": ["node_modules/@types"],
     "target": "es2017",
     "module": "commonjs",
-    "moduleResolution": "node",
     "allowJs": false,
     "allowSyntheticDefaultImports": false,
     "noEmitOnError": true,

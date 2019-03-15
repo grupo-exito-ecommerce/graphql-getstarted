@@ -8,7 +8,7 @@ declare global {
   }
 
   interface DataSources {
-    smart: SmartQuickDataSource;
+    user: SmartQuickDataSource;
   }
 }
 

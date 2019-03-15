@@ -1,5 +1,5 @@
-import { SmartQuickDataSource } from './smartQuickDataSource';
+import { User } from './user-datasources';
 
 export const dataSources = (): DataSources => ({
-  smart: new SmartQuickDataSource()
+  user: new User()
 });

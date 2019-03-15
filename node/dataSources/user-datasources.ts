@@ -1,4 +1,4 @@
-import { UserData, ResponseModel } from '../shared/models/UserModel';
+import { UserData, ResponseModel } from '../shared/models/user-model';
 /*
 Clase que obtiene todos los metodos relacionados con las bolsas de los pedidos
 que se hacen por los sitios.
