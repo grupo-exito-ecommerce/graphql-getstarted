@@ -1,7 +1,4 @@
-# SmartQuick API (Coverage)
-
-La API SmartQuick Permite realizar la integración del servicio SmartQuick que se emplea para realizar la validación de cobertura de una dirección para las modalidades **A domicilio** Y **Compra y recoge**
-  
+# GetStarted API
 
 Para importar en su componente:
 
@@ -9,24 +6,22 @@ Para importar en su componente:
 manifest.json
 
 "dependencies": {
-	"exito.smartquick": "1.x"
+  "exito.graphql-getstarted": "1.x"
 }
 
 ```
-
-  
 
 ## Uso
 
 Se deben de proveer los siguientes datos.
 
 ```js
-smartQuick(address: String, city: String, domine:String)
+user(name: String, pwd: String)
 ```
 
-Donde se retornaran los datos con la longitud y latitud obtenida por SmartQuick
+Donde se retornaran los mismos datos
 
 ```js
-lat: String
-long: String
+name: String;
+pwd: String;
 ```
