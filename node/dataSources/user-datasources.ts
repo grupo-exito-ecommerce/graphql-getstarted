@@ -1,8 +1,5 @@
 import { UserData, ResponseModel } from '../shared/models/user-model';
-/*
-Clase que obtiene todos los metodos relacionados con las bolsas de los pedidos
-que se hacen por los sitios.
-*/
+
 export class User {
   public printUser = async (
     name: string,
