@@ -1,4 +1,4 @@
-import { User } from './user-datasources';
+import { User } from './user';
 
 export const dataSources = (): DataSources => ({
   user: new User()

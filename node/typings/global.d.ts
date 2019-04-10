@@ -1,5 +1,5 @@
 import { ServiceContext } from '@vtex/api';
-import { SmartQuickDataSource } from './dataSources/smartQuickDataSource';
+import { UseDataSource } from './dataSources/user';
 
 declare global {
   interface Context extends ServiceContext {
@@ -8,7 +8,7 @@ declare global {
   }
 
   interface DataSources {
-    user: SmartQuickDataSource;
+    user: UseDataSource;
   }
 }
 

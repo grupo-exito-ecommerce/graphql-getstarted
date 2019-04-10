@@ -1,26 +1,29 @@
 {
   "compilerOptions": {
-    "types": ["node"],
-    "typeRoots": ["node_modules/@types"],
+    "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "lib": ["es2017", "esnext.asynciterable"],
+    "listEmittedFiles": true,
     "target": "es2017",
-    "module": "commonjs",
-    "allowJs": false,
-    "allowSyntheticDefaultImports": false,
-    "noEmitOnError": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
     "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
     "strictFunctionTypes": true,
+    "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "skipLibCheck": true
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node", "jest"]
   },
+  "include": ["typings", "**/*.ts"],
+  "exclude": ["node_modules"],
   "typeAcquisition": {
     "enable": false
-  },
-  "include": ["./typings.d.ts", "./**/*"],
-  "exclude": ["node_modules"]
+  }
 }
