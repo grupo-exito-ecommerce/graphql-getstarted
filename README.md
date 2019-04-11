@@ -6,7 +6,7 @@ Para importar en su componente:
 manifest.json
 
 "dependencies": {
-  "exito.graphql-getstarted": "1.x"
+  "exito.getstarted-graphql": "1.x"
 }
 
 ```
@@ -16,12 +16,15 @@ manifest.json
 Se deben de proveer los siguientes datos.
 
 ```js
-user(name: String, pwd: String)
+user(gender?: string)
 ```
 
-Donde se retornaran los mismos datos
+Donde se retornaran los siguientes datos
 
 ```js
-name: String;
-pwd: String;
+gender: string;
+fullName: string;
+email: string;
 ```
+
+Para ver más ejemplos revise `node\shared\querys.gql`

@@ -1,4 +1,4 @@
-import { user } from './user-resolver';
+import { user } from './user';
 
 export const resolvers = {
   Query: {
