@@ -1,0 +1,23 @@
+fragment Attributes on User {
+  gender
+  fullName
+  email
+}
+
+query getUserMale {
+  user(gender: "male") {
+    ...Attributes
+  }
+}
+
+query getUserFemale {
+  user(gender: "female") {
+    ...Attributes
+  }
+}
+
+query getRandomUser {
+  user {
+    ...Attributes
+  }
+}
