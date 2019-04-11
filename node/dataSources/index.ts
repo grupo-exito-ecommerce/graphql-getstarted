@@ -1,5 +1,6 @@
-import { User } from './user';
+import { UserDataSource } from './user';
+export * from './user';
 
 export const dataSources = (): DataSources => ({
-  user: new User()
+  userDS: new UserDataSource()
 });

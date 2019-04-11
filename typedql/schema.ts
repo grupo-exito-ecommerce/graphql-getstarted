@@ -1,16 +1,19 @@
 export interface User {
-  name: string
-  pwd: string
+  gender: string;
+  fullName: string;
+  email: string;
 }
 
 export interface Query {
   /**
    * @graphql Description
-   * Obtiene los parametros y muestra.
+   * Retorna un usuario aleatorio, si desaea que este
+   * corresponda a un genero en específico, envie
+   * el parámetro "gender" con "female" o "male".
    *
    * @graphql Directives
    * @cachecontrol (scope: PUBLIC, maxAge: MEDIUM)
    *
    */
-  user(name: string, pwd: string): User
+  user(gender?: string): User | null
 }

@@ -1,14 +1,14 @@
-import { ServiceContext } from '@vtex/api';
+import { ServiceContext, IOContext } from '@vtex/api';
 import { UseDataSource } from './dataSources/user';
 
 declare global {
   interface Context extends ServiceContext {
     dataSources: DataSources;
-    vtex: ServiceContext
+    vtex: IOContext
   }
 
   interface DataSources {
-    user: UseDataSource;
+    userDS: UseDataSource;
   }
 }
 

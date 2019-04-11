@@ -1,1 +1,1 @@
-export * from './category.mock';
+export * from './user.mock';

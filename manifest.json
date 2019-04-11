@@ -1,5 +1,5 @@
 {
-  "name": "graphql-getstarted",
+  "name": "getstarted-graphql",
   "vendor": "exito",
   "version": "1.0.0",
   "title": "",
@@ -9,9 +9,18 @@
   },
   "builders": {
     "node": "3.x",
-    "graphql": "1.x"
+    "typedql": "0.x"
   },
   "dependencies": {},
   "mustUpdateAt": "2020-01-15",
-  "registries": ["smartcheckout"]
+  "registries": ["smartcheckout"],
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "randomuser.me",
+        "path": "/api/*"
+      }
+    }
+  ]
 }

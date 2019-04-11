@@ -9,3 +9,7 @@ node_modules/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Unit test
+node/.scannerwork/
+node/coverage/
